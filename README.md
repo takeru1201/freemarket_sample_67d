@@ -37,10 +37,10 @@ Things you may want to cover:
 
 |id|references|null: fgalse|            1
 |nickname|string|null: false,limit:15|  ２
-|Last name|string|null: false,limit:10|          ３    
-|Farst name｜string|null: false,limit10|         4
-|last name|string|null: false,limit10|           5  
-|farst name｜string|null: false,limit10|          6
+|Last name|string|null: false,limit:10|  ３    
+|Farst name｜string|null: false,limit10|  4
+|last name|string|null: false,limit10|    5  
+|farst name｜string|null: false,limit10|   6
 |Birthday|date|nul: false|                7
 |address|string|nul: false|               8
 |phone number|integer|nul: false|         9
