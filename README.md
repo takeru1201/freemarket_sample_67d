@@ -50,9 +50,16 @@ Things you may want to cover:
 |point|integer|                           13
 # |icon|text|
 
+## association
+ has_many :products
+ has_many :comments          商品コメント
+ has_ many :good btn         良いね
+ has_many :Evaluation        評価
+ has_one :credit_card        クレジットカード 
+ accepts_nested_attributes_for :user_address  アドレス これをつけると更新が楽みたいです！！
 
-
-
-　
+## add_index
+ add_index :email, unique: true
+ add_index :reset_password_token, unique: true
 
 
