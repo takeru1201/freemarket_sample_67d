@@ -98,7 +98,7 @@
   -#     %span 必須 
   -#     %br/
   -#     = a.text_field :building, :placeholder => "例)ほうれん荘"      
-  = f.fields_for :address do |i|
+  = f.fields_for @address do |i|
     .form-group
       = i.label :postal_code, "郵便番号"
       %br
@@ -106,7 +106,7 @@
       %br
       = i.label :prefecture, "都道府県"
       %br
-      = i.text_field :prefecture
+      = i.text_field :prefectures
       %br
       = i.label :municipality, "市区町村"
       %br
