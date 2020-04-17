@@ -70,6 +70,11 @@
     %span 必須 
     %br/
     = f.telephone_field	 :phone_number, autofocus: true, :placeholder => "-は入れないで下さい"
+  .field
+    = f.label :birthday
+    %span 必須 
+    %br/
+    = f.telephone_field	 :birthday, autofocus: true, :placeholder => "1900-01-01"
   -# .field 
   -#   = f.label :address
   -#   %br/
@@ -106,11 +111,15 @@
       %br
       = i.label :prefecture, "都道府県"
       %br
-      = i.text_field :prefecture
+      = i.text_field :prefectures
       %br
       = i.label :municipality, "市区町村"
       %br
       = i.text_field :municipality, :placeholder => "例)南アルプス市天然水"
+      %br
+      = i.label :building
+      %br
+      = i.text_field :building, :placeholder => "建物"
       %br
       = i.label :house_number, "番地"
       %br
