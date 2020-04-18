@@ -3,12 +3,13 @@ ja:
     attributes:
       user:
         nickname: "ニックネーム"
+          blank: l
         name: "お名前"
         last_name: "苗字"
         first_name: "名前"
         name_kana: "お名前カナ"
-        last_name_kana: "ミョウジ"
-        first_name_kana: "ナマエ"
+        last_name_kana: "西野(カナ)"
+        first_name_kana: "名前(ナマエ)"
         current_password: "現在のパスワード"
         email: "メールアドレス"
         password: "パスワード"
@@ -80,3 +81,4 @@ ja:
     unlocks:
       new:
         resend_unlock_instructions: "アカウントの凍結解除方法を再送する"
+  
