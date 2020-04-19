@@ -1,14 +1,49 @@
 ja:
   activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            nickname:
+              blank: "が入力されていません。"
+            email:
+              taken: "は既に使用されています。"
+              blank: "が入力されていません。"
+              too_short: "は%{count}文字以上に設定して下さい。"
+              too_long: "は%{count}文字以下に設定して下さい。"
+              invalid: "は有効でありません。"
+            password:
+              taken: "は既に使用されています。"
+              blank: "が入力されていません。"
+              too_short: "は%{count}文字以上に設定して下さい。"
+              too_long: "は%{count}文字以下に設定して下さい。"
+              invalid: "は有効でありません。"
+              confirmation: "が内容とあっていません。"
+            password_confirmation:
+              blank: "が入力されていません。"
+              too_short: "は%{count}文字以上に設定して下さい。"
+            first_name:
+              blank: "が入力されていません。"
+            last_name:
+              blank: "が入力されていません。"
+            first_name_kana:
+              blank: "が入力されていません。"
+            last_name_kana:
+              blank: "が入力されていません。"
+            phone_number:
+              blank: "が入力されていません。"
+              too_short: "は%{count}文字以上に設定して下さい。" 
+            birthday:
+              blank: "が入力されていません。"
     attributes:
       user:
         nickname: "ニックネーム"
         name: "お名前"
-        last_name: "苗字"
-        first_name: "名前"
-        name_kana: "お名前カナ"
-        last_name_kana: "西野カナ"
-        first_name_kana: "ナマエ"
+        last_name: "名前"
+        first_name: "苗字"
+        name_kana: "お名前（カタカナ）"
+        last_name_kana: "お名前カナ（名前）"
+        first_name_kana: "お名前カナ（苗字）"
         current_password: "現在のパスワード"
         email: "メールアドレス"
         password: "パスワード"
@@ -21,8 +56,10 @@ ja:
         municipality: "市町村"
         house_number: "番地"
         building: "建物名"
-    models:
-      user: "ユーザ"
+        birthday: "誕生日"
+        phone_number: "電話番号" 
+      address:
+        postal_code: "郵便番号"
   devise:
     confirmations:
       new:
