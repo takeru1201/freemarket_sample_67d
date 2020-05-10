@@ -25,4 +25,6 @@ class Item < ApplicationRecord
   validates :prefecture_id, presence: true
   validates :estimated_delivery_id, presence: true
   validates :category_id, presence: true
+  
 end
+
