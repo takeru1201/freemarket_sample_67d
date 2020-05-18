@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   def index
-    @items = Item.includes(:user, :category).order("created_at DESC")
+    @items = Item.with_attached_images.includes(:user, :category).order("created_at DESC")
   end
 
   def new
@@ -30,7 +30,7 @@ class ItemsController < ApplicationController
 
 
   def create
-  
+
     # Item.create(item_params)
     @item = Item.new(item_params)
     unless @item.valid?
