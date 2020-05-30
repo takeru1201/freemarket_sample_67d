@@ -18,15 +18,19 @@ $(function (){
 
 // file_fieldのnameに動的なindexをつける為の配列
 let fileIndex = [1,2,3,4,5,6,7,8,9,10];
-lastIndex = $('.new_item_page_container_main_label').data('index');
+lastIndex = $('.new_item_page_container_main_label:last').data('index');
+console.log(lastIndex)
 fileIndex.splice(0, lastIndex);
 
   $(document).on('change', '.js-file', function(e){
     const targetIndex = $(this).parent().data('index')
     const file = e.target.files[0];
     const blobUrl = window.URL.createObjectURL(file);
+    if (img = $(`img[data-index="${targetIndex}"]`)[0]) {
+      img.setAttribute('src', blobUrl);
+    } else{
     $('.prepend_area').prepend(buildImg(targetIndex, blobUrl));
-
+    }
     var imagesLength = $('.image-box').length;
     $('.pre-content').css('width', `calc(100% - ${20 * (imagesLength % 5)}%)`);
     var imagesLength = $('.image-box').length;
