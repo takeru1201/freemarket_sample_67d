@@ -214,13 +214,24 @@
         width: 100%;
         height: calc(160px - 21px);
       }
-      .fa-trash-alt {
-      display: block;
-      background-color: whitesmoke;
-      text-align: center;
-      color: gray;
-      cursor: pointer;
-      width: 100%;
+      .fas{
+        display: flex;
+        .fa-image{
+          display: block;
+          background-color: whitesmoke;
+          text-align: center;
+          color: gray;
+          cursor: pointer;
+          width: 50%;
+        }
+        .fa-trash-alt {
+          display: block;
+          background-color: whitesmoke;
+          text-align: center;
+          color: gray;
+          cursor: pointer;
+          width: 50%;
+          }
       }
      
     }

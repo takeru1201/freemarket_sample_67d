@@ -11,7 +11,10 @@ $(function (){
       <a href="${url}" data-lightbox="group">
         <img data-index="${index}" src="${url}" data-lightbox="group">
       </a>
-      <i class="fas fa-trash-alt"></i>
+      <div class="fas">
+        <i class="fa-image"></i>
+        <i class="fa-trash-alt"></i>
+      </div>
     </div>`;
     return html;
   };
