@@ -49,6 +49,12 @@ module FormHelper
       input_field_with_error(attribute, options) do                             
          super                                                                   
       end                                                                       
-    end     
+    end  
+    
+    def date_select(attribute, options={})                                       
+      input_field_with_error(attribute, options) do                             
+         super                                                                   
+      end                                                                       
+    end  
   end                                                                         
 end    
