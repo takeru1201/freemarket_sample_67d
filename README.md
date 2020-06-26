@@ -1,10 +1,17 @@
 # 🔰freemarket_sample_67d  
 フリマアプリのクローンサイト  
-![TopPage](https://gyazo.com/057b6bf9c2476f00f37a02d020570846)
+<p align="center">
+  <img src="https://i.gyazo.com/057b6bf9c2476f00f37a02d020570846.jpg" width="80%">
+</p>
 
 ## 🔎 Explanation  
 フリマアプリのクローンサイト。誰でも簡単に売り買いが楽しめるフリマアプリの機能を再現したサイトです。  
 ユーザー登録、商品出品、商品購入などの機能が再現されていますが、実際の取引はできません。
+<p display="flex" align="center">
+ <a href="ユーザー登録"><img src="https://i.gyazo.com/2c093a999fd581b5ef162d8a6c5297e8.png" width="30%;" height="300px;" /></a>
+ <a href="商品出品"><img src="https://i.gyazo.com/dad53fe1d2775c62d41c04e08be35c37.png" width="30%;" height="300px;" /></a>
+ <a href="商品購入"><img src="https://i.gyazo.com/fd66d588097169380ccaf507dbd8be73.jpg" width="30%;" height="300px;" /></a>
+</p>  
 
 ## 🌐 App URL
 ### **http://52.196.216.95/**
