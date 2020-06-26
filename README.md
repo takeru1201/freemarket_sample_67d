@@ -1,5 +1,8 @@
-# freemarket_sample_67d DB設計
-## Usersテーブル
+# freemarket_sample_67d 
+
+## DB設計  
+
+### Usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |nickname|string|null: false|
@@ -19,7 +22,7 @@
 |reset_password_sent_at|datetime|null: false|
 |remember_created_at|datetime|null: false|
 |address_id|bigint||
-### Association
+#### Association
 - has_many :items
 - has_many :comments
 - has_many :likes
@@ -27,13 +30,13 @@
 - has_one :credit
 - one :address
 - accepts_nested_attributes_for :address
-### add_index
+#### add_index
 - add_index :address_id
 - add_index :email
 - add_index :reset_password_token
 
 
-## Itemsテーブル
+### Itemsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|bigint|null: false|
@@ -48,7 +51,7 @@
 |brind_id|bigint||
 |prefecture_id|integer||
 |buyer_id|bigint||
-### Association
+#### Association
 - has_many :item_comments
 - has_many :likes
 - has_many :items_statuses
@@ -64,37 +67,37 @@
 - belongs_to_active_hash :delivery_method
 - belongs_to_active_hash :estimated_delivery
 - belongs_to_active_hash :status
-### add_index
+#### add_index
 - add_index :user_id
 - add_index :category_id
 - add_index :brand_id
 
-## Items_commentsテーブル
+### Items_commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|bigint|null: false|
 |item_id|bigint|null: false|
 |item_comment|text|null: false|
-### Association
+#### Association
 - belongs_to :item
 - belongs_to :user
-### add_index
+#### add_index
 - add_index :user_id
 - add_index :item_id
 
-## likesテーブル
+### likesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|bigint|null: false| 
 |item_id|bigint|null: false|
-### Association
+#### Association
 - belongs_to :item
 - belongs_to :user
-### add_index
+#### add_index
 - add_index :user_id
 - add_index :item_id
 
-## Addressesテーブル
+### Addressesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user|references|null: false|
@@ -103,54 +106,54 @@
 |municipality|string|null: false|
 |building|string||
 |house_number|string|null: false|
-### Association
+#### Association
 - belongs_to :user, optional: ture
-### add_index
+#### add_index
 - add_index :user
 
-## Credit_cardsテーブル
+### Credit_cardsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false|
 |costomer_id|string|null: false|
 |card_id|string|null: false|
-### Association
+#### Association
 - belongs_to :user
 
-# Evaluationsテーブル
+### Evaluationsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user|integer|null :false|
 |evaluation|text|null: false|
-### Association
+#### Association
 - belongs_to :user
 
-## Categoriesテーブル
+### Categoriesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null :false|
 |ancestry|string||
-### Association
+#### Association
 - has_many :items
 - has_ancestry
 - has_many :item_images
 - accepts_nested_attributes_for :item_images, allow_destroy: true, update_only: true
 
-## Item_imagesテーブル
+### Item_imagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |src|string|null:false|
 |item_id|integer|null :false|
-### Association
+#### Association
 - mount_uploader :src, ImageUploader
 - belong_to :item
 
-## Brandsテーブル
+### Brandsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null :false|
 
-### Association
+#### Association
 - has_many :items
 
 
