@@ -41,17 +41,17 @@ ID: furima  Pass: 67d
 ```
 
 ## 🗿DevelopmentEnvironment
-Ruby 2.5.1  
-Ruby on Rails 5.2.4.2  
-MySQL 5.6.46  
-Haml 5.1.2  
-Sass 3.7.4  
-jQuery 3.4.1  
-Rspec 3.9  
-AWS:
+:white_check_mark:Ruby 2.5.1  
+:white_check_mark:Ruby on Rails 5.2.4.2  
+:white_check_mark:MySQL 5.6.46  
+:white_check_mark:Haml 5.1.2  
+:white_check_mark:Sass 3.7.4  
+:white_check_mark:jQuery 3.4.1  
+:white_check_mark:Rspec 3.9  
+:white_check_mark:AWS:
 EC2
 S3  
-Github
+:white_check_mark:Github
 
 
 
@@ -211,4 +211,15 @@ Github
 #### Association
 - has_many :items
 
+## :ledger:License
+[MIT](https://github.com/takeru1201/freemarket_sample_67d/blob/master/LICENSE)
 
+## :dancers:Author
+[keisuke-oyatu](https://github.com/keisuke-oyatu)  
+[taku-tky-0609](https://github.com/taku-tky-0609)  
+[ta1ka2shi3](https://github.com/ta1ka2shi3)  
+[irietoshinari](https://github.com/irietoshinari)  
+[takeru1201](https://github.com/takeru1201)
+
+# Thanks for watching!!!:smile:
+#  
